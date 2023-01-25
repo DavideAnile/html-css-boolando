@@ -1,0 +1,28 @@
+.centered-container{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: lightblue;
+    /*test*/
+}
+
+nav .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #ff6900;
+    color: white;
+    height: 60px;
+}
+
+
+nav  .nav-bar .links a{
+    color: white;
+    text-decoration: none;
+}
+nav  .nav-bar #logo{
+    height: 40px;
+}
