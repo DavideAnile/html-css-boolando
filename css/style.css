@@ -1,10 +1,13 @@
 .centered-container{
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 0 auto;
 }
   /* header */
 nav{
+    position: fixed;
+    width: 100%;
     background-color: #ff6900;
+    z-index: 2;
     /*test*/
 }
 
@@ -12,16 +15,17 @@ nav .nav-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     background-color: #ff6900;
     color: white;
     height: 80px;
 }
+    
 
 
 nav  .nav-bar .links a{
     color: white;
     text-decoration: none;
+    padding: 0 5px;
 }
 nav  .nav-bar #logo{
     height: 40px;
@@ -42,20 +46,101 @@ main{
     display: flex;
     justify-content: space-between;
     
-    
-    
 }
 
 
 .main-image{
+    width: 100%;
+}
     
+.secondary-image{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+    
+.item:hover .secondary-image{
+    display: inline-block;
+}
+    
+    
+#item1, #item2, #item3,
+#item4, #item5, #item6{
+    position: relative;
 }
 
 
-#item{
+.red-price{
+    font-weight: bold;
+    color: red;
+}
+
+.line-through-price{
+    text-decoration: line-through;
+}
+    
+#heart{
+    position: absolute;
+    font-size: 2em;
+    text-align: center;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    right: 0;
+}
+
+.item:hover #heart{
+color: red;
+}
+
+
+#sale{
+ position: absolute;
+ bottom: 100px;
+ left: 0;
+ width: 50px;
+ height: 20px;
+ text-align: center;
+ color: white;
+ background-color: red;
+ border-radius: 5px;
+}
+
+
+#sustainability{
+    position: absolute;
+    bottom: 100px;
+    left: 55px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+
+}
+    
+#item6 #sustainability{
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+
+}
+
+.item{
     width: 440px;
     min-height: 700px;
-    background-color: yellow;
+    
     margin: 30px 0;
 }
 
@@ -65,9 +150,9 @@ main{
 }
 
 
+/* /Main */
 
-
-
+/* Footer */
 
 footer{
     background-color: black;
@@ -81,4 +166,17 @@ footer{
     background-color: black;
     height: 80px;
 }
+
+.footer-credits a{
+    color: white;
+    text-decoration: none;
+    padding-right: 5px;
+}
+
+/* Footer */
+    
+    
+
+
+
 
