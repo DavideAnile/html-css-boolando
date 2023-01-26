@@ -51,6 +51,8 @@ main{
 
 .main-image{
     width: 100%;
+    
+    
 }
     
 .secondary-image{
@@ -59,10 +61,12 @@ main{
     position: absolute;
     top: 0;
     left: 0;
+    
    
 }
     
 .item:hover .secondary-image{
+    
     display: inline-block;
 }
     
@@ -93,7 +97,7 @@ main{
     right: 0;
 }
 
-.item:hover #heart{
+ #heart:hover{
 color: red;
 }
 
@@ -142,6 +146,7 @@ color: red;
     min-height: 700px;
     
     margin: 30px 0;
+    
 }
 
 .second-section{
